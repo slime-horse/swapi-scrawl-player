@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
+# How to run the program
+Run install & dev commands:
+```bash
+npm install
+```
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Open [http://localhost:3000](http://localhost:3000) to see the site.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Rational
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Going into the build of this site there were two core principles guiding my choices:
+- Minimize complexity to meet the 4-hour build time while also meeting the criteria of using GraphQL, routing, and using a CSS framework 
+- Build something visually engaging, with a structure that could be made responsive quickly, while not requiring much design time
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Why I chose NextJS / Tailwinds
+- I'm experience working with it, which minimizes unknown unknowns that could cause problems with meeting time limit
+- I recently have been coding mostly BEM style CSS instead of using CSS frameworks however I've done a few things with Tailwinds and NextJS can configure Tailwinds for you on setup
+- NextJS makes it easy to mix CSS modules and Tailwinds, which would be important to save time on design elements that would be more fiddly to get working in tailwinds
+- NextJS has a variety of routing options, I switched from their more modern server components routing to client side to keep GraphQL setup simple
+- I prefer working with Typescript and NextJS has a solid default configuration
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Why I choose to make a Mock streaming site
+- I was already familiar with https://www.themoviedb.org, I knew I'd be able to source movie logos, backdrops, and posters allowing for quick image sourcing
+- Sourcing images and designing for other elements available in SWAPI like characters, planets, ships would be more time-consuming
+- Having the intro crawl available in SWAPI felt like the perfect fit for designing for the design principle of incorporating moments of joy and surprise while meeting assignments constraints
+- There is lots of quick reference available for the design, and the layout would be an opportunity to code more interesting styling for the assignment

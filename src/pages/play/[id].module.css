@@ -1,0 +1,27 @@
+@keyframes scroll {
+    0% { top: 100%; }
+    100% { top: -170%; }
+}
+
+.crawlContainer {
+    --scale: calc(100vw / 1920);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: 50% 100%;
+    transform: perspective(350px) rotateX(25deg);
+}
+
+.crawl {
+    width: 60vw;
+    color: rgb(245, 214, 67);
+    font-size: calc(78 * var(--scale));
+    letter-spacing: calc(8 * var(--scale));
+    text-align-last: justify;
+    position: absolute;
+    top: 100%;
+    animation: scroll 45s linear 0s forwards;
+}
