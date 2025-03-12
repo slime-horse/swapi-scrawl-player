@@ -22,7 +22,7 @@ Going into the build of this site there were two core principles guiding my choi
 - NextJS has a variety of routing options, I switched from their more modern server components routing to client side to keep GraphQL setup simple
 - I prefer working with Typescript and NextJS has a solid default configuration
 
-# Why I choose to make a Mock streaming site
+# Why I choose to make a mock streaming site
 - I was already familiar with https://www.themoviedb.org, I knew I'd be able to source movie logos, backdrops, and posters allowing for quick image sourcing
 - Sourcing images and designing for other elements available in SWAPI like characters, planets, ships would be more time-consuming
 - Having the intro crawl available in SWAPI felt like the perfect fit for designing for the design principle of incorporating moments of joy and surprise while meeting assignments constraints
